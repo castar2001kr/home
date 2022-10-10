@@ -1,0 +1,43 @@
+.room_view {
+	
+	margin : 30px;
+	border-style: outset;
+	border-color: black gray gray;
+	width: 800px;
+	padding: 5%;
+	background-color: gray;
+	justify-content: center;
+}
+
+.room {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 3%;
+	border: 3px solid black;
+	padding: 3%;
+	width: 600px;
+	background-color: white;
+	margin-bottom: 10%;
+}
+
+.refresh {
+	display: flex;
+	justify-content: right;
+	margin-bottom: 10%;
+}
+
+.containerofview {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+	
+
+}
+
+.roomlist{
+	margin-top : 30px;
+	width : 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

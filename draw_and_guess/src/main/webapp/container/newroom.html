@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- CSS only bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- jquery CDN요소 추가 >> minified-->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+ <form name="form" method="post">
+        <div class="mb-3">
+            <label for="로그인" class="form-label" >방만들기</label>
+            <input type="text" class="form-control" name="title" placeholder="방 제목을 입력하세요.">
+        
+        </div>
+         
+        <button type="button" onclick="create_room_ajax()" class="btn btn-primary">방 생성</button>
+      </form>
+  
+
+
+</body>
+    <script>
+  
+
+   
+        
+        
+        function create_room_ajax(){
+            var queryString = $("form[name=form]").serialize() ;
+
+                    $.ajax({
+                        type : 'post',
+                        url : '/game/roomlist',
+                        data : queryString,
+                        dataType : 'json',
+                        error: function(xhr, status, error){
+                            alert(error);
+                        },
+                        success : function(e){
+                        	
+                        	if(e.result){
+                        		
+                        		alert("방에 입장합니다.")
+                        		location.href="/enter"
+                        		
+                        	}else{
+                        		
+                            alert(e.msg);
+                            console.log(e)
+                        	}
+                        }
+                    });
+ 
+	    }
+         
+
+            
+           
+            
+
+        /*
+        $("form[name=back]").on(Submit, function(){
+            $(location).attr('href', '10.10.62.40:8080/');
+        })
+        */
+      </script>
+      <script src="/index/jquery.js"></script>
+      <script src="/index/navbar.js"></script>
+
+</html>

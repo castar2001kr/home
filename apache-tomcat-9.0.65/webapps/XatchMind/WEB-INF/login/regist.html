@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>로그인 페이지</title>
+
+<style>
+.logincontainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 30%;
+}
+
+.po {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+form {
+	width: 350px;
+}
+
+.sub {
+	display: flex;
+	justify-content: right;
+}
+
+form {
+	border: solid black 2px;
+	padding: 30px;
+	border-radius: 20px;
+}
+</style>
+
+
+</head>
+<body>
+
+	<div class="logincontainer">
+
+		<form method="post" action="/login.do">
+
+			<div class="po">
+
+				<label for="id">아이디 : </label> <input type="text" name="id">&nbsp;
+				<button>아이디 확인</button>
+			</div>
+
+			<div class="po">
+
+				<label for="pwd">비밀번호 확인 : </label> <input type="password"
+					name="pwd">&nbsp;
+
+			</div>
+
+			<div class="po">
+
+				<label for="pwditty">비밀번호 확인 : </label> <input type="password"
+					name="pwditty">&nbsp;
+
+			</div>
+
+			<div class="po">
+
+				<label for="email">이메일 : </label> <input type="email" name="email">&nbsp;
+
+			</div>
+
+			<div class="po">
+
+				<label for="name">닉네임 : </label> <input type="text" name="name">&nbsp;
+
+			</div>
+
+			<div class="sub">
+
+
+				<button type="submit">회원 가입하기</button>
+
+			</div>
+
+
+		</form>
+
+	</div>
+
+</body>
+</html>

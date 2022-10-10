@@ -1,0 +1,11 @@
+.upper_menu {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.containerofnav {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+}

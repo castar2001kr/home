@@ -1,0 +1,8 @@
+* linguist-vendored
+*.html linguist-vendored=true
+*.xml linguist-vendored=true
+*.css linguist-vendored=true
+*.bat linguist-vendored=true
+*.sh linguist-vendored=true
+*.java linguist-vendored=false
+*.js linguist-vendored=false

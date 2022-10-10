@@ -1,0 +1,41 @@
+<body>
+
+    <script src="jquery.js"></script>
+    <script>
+
+        // $(document).ready(
+
+        //     function(){
+        //         let a= window.location.href.split("?")[1].split("&");
+
+               
+        //         for(let j=0;j<100;j++)
+        //         for(let i=0; i<a.length; i++){
+
+                    
+        //             $("body").append($("<div>").text(a[i])).css("color","red");
+                
+        //         }
+        //     }
+
+
+        // );
+
+        
+        let ob = {a:function(data){console.log(a)}} // 클로저에 의해 a는 null 값이다.
+        let a=3;
+        
+        let c = function(data){
+
+            let a=2;
+            ob.a(data);
+
+
+        }
+
+        c(31);
+
+
+    </script>
+
+</body>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방제 : </title>
+
+    <style>
+        
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile{
+            border: red solid 2px;
+            width: 150px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 30px;
+            
+        }
+
+        .avatar{
+            border: black solid 2px;
+            height: auto;
+            text-align: center;
+            
+        }
+
+        .name{
+            display: inline;
+            text-align: center;
+            border: solid blue 2px;
+        }
+
+        .avatar>img{
+            display: block;
+            width: 100%;
+            height: 90px;
+            
+        }
+
+        .left_people{
+
+            display: flex;
+            flex-direction: column;
+            float: left;
+        }
+        
+        .right_people{
+            float: right;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        
+        .cnv_container{
+
+            border: 2px teal solid;            
+            width: 500px;
+            height: 800px;
+            margin : 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .container{
+            justify-content: space-between;
+            display: flex;
+            width: 900px;
+
+            
+        }
+
+        canvas{
+            border: solid aqua 2px;
+            height: 500px;
+        }
+
+        .anslog{
+            overflow: scroll;
+            width: 150px;
+            height: 100px;
+            border: solid 2px black;
+        }
+
+        .chatlog{
+            overflow: scroll;
+            width: 500px;
+            height: 300px;
+            border: solid 2px black;
+        }
+
+        .emit{
+            height: 200px;
+        }
+
+        .btn{
+            height : 40px;
+        }
+
+        .playbtn{
+            height: 40px;
+            visibility: hidden;
+        }
+        .anns{
+            visibility: hidden;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="container">
+
+       
+        <div class="left_people">
+            <div class="profile">
+           
+                <div class="name">name</div>
+                <div class="anslog" id="anslog1"></div>
+            </div>
+
+            <div class="profile">
+                
+                <div class="name">name</div>
+                <div class="anslog"></div>
+            </div>
+
+            <div class="profile">
+         
+                <div class="name">name</div>
+                <div class="anslog"></div>
+            </div>
+
+            <textarea class="anns"></textarea>
+            <button class="playbtn"> 시작 버튼</button>
+            
+        </div>
+
+            
+
+           
+
+      
+
+
+        <div class="cnv_container">
+
+            <canvas class="canvas1" width="500" height="500"></canvas>
+            <div class="chatlog"></div>
+            <textarea class="emit" id="chat"></textarea>
+            <button class="btn" id="chatemit">전송 버튼</button>
+            
+        </div>
+
+
+        <div class="right_people">
+            
+            <div class="profile">
+                
+             
+                <div class="name">name</div>
+                <div class="anslog"></div>
+            </div>
+
+            <div class="profile">
+     
+                <div class="name">name</div>
+                <div class="anslog"></div>
+            </div>
+
+            <div class="profile">
+                
+            
+                <div class="name">name</div>
+                <div class="anslog"></div>
+
+
+        </div>
+        <textarea class="emit" id="ans"></textarea>
+        <button class="btn" id="ansemit">전송 버튼</button>
+
+    </div>
+
+    
+</body>
+
+    <script src="/index/jquery.js"></script>
+    <script src="/gameIO/gameIO.js"></script>
+    
+
+</html>

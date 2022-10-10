@@ -1,0 +1,15 @@
+.foot {
+	display: flex;
+	justify-content: center;
+}
+
+.foot>div {
+	width: 50%;
+	display: flex;
+	justify-content: right;
+}
+
+.foot a {
+	background-color: black;
+	color: white;
+}

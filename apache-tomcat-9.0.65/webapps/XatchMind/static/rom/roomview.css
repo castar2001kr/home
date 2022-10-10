@@ -1,0 +1,30 @@
+.room_view {
+	border-style: outset;
+	border-color: black gray gray;
+	width: 50%;
+	padding: 5%;
+	background-color: gray;
+}
+
+.room {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 3%;
+	border: 3px solid black;
+	padding: 3%;
+	width: 90%;
+	background-color: white;
+	margin-bottom: 10%;
+}
+
+.refresh {
+	display: flex;
+	justify-content: right;
+	margin-bottom: 10%;
+}
+
+.containerofview {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+}
